@@ -306,7 +306,7 @@
 					$linkWrapper.attr('aria-current',"page");
 				}
 				//$link = $('<span class="current">' + (options.text) + '</span>');
-				$link = $('<a href="' + o.hrefTextPrefix + (pageIndex + 1) + o.hrefTextSuffix + '" class="page-link" aria-label="page ' + (pageIndex+1) +' ">' + (options.text) + '</a>');
+				$link = $('<span class="current"><a href="' + o.hrefTextPrefix + (pageIndex + 1) + o.hrefTextSuffix + '" class="page-link" aria-label="page ' + (pageIndex+1) +' ">' + (options.text) + '</a></span>');
 			} else {
 				if (o.useAnchors) {
 					$link = $('<a href="' + o.hrefTextPrefix + (pageIndex + 1) + o.hrefTextSuffix + '" class="page-link" aria-label="page ' + (pageIndex+1) +' ">' + (options.text) + '</a>');
