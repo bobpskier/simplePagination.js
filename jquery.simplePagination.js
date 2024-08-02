@@ -300,7 +300,7 @@
 
 			if (pageIndex == o.currentPage || o.disabled) {
 				if (o.disabled || options.classes === 'prev' || options.classes === 'next') {
-					$linkWrapper.addClass('disabled');
+					// $linkWrapper.addClass('disabled');
 				} else {
 					$linkWrapper.addClass('active');
 					$linkWrapper.attr('aria-current',"page");
