@@ -303,11 +303,12 @@
 					$linkWrapper.addClass('disabled');
 				} else {
 					$linkWrapper.addClass('active');
+					$linkWrapper.attr('aria-current',"page");
 				}
 				$link = $('<span class="current">' + (options.text) + '</span>');
 			} else {
 				if (o.useAnchors) {
-					$link = $('<a href="' + o.hrefTextPrefix + (pageIndex + 1) + o.hrefTextSuffix + '" class="page-link">' + (options.text) + '</a>');
+					$link = $('<a href="' + o.hrefTextPrefix + (pageIndex + 1) + o.hrefTextSuffix + '" class="page-link" aria-label="page">' + (options.text) + '</a>');
 				} else {
 					$link = $('<span >' + (options.text) + '</span>');
 				}
